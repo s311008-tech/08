@@ -1,38 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>馬睿妤個人網站</title>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  /*height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
-<body align="center">
-    <p style="color:rgb(167, 67, 167);">馬睿妤傳送門</p>
-    <hr style="border-color:rgb(202, 120, 235);">
-    <p><span style="color:rgb(112, 196, 230);">探索我的學習創作與旅程，分享校園生活與成長點滴</span></p>
-    <p style="color:rgb(173, 106, 146);">生日:12/21射手座</p>
-    <p style="color:rgb(84, 75, 201);">畢業學校：名間國中</p>
-    <p style="color:rgb(48, 241, 145);">個人特色亮點：內向</p>
-    <p style="color:rgb(216, 98, 114);">期待：考上好大學</p>
+<body>
+
+<h2 style="color:rgb(173, 106, 146);">「探索成長的足跡：我的學習與成長旅程」</h2>
+<p style="color:rgb(60, 179, 226);">探索我的學習創作與旅程，分享校園生活與成長點滴  生日:12/21射手座  畢業學校：名間國中  個人特色亮點：內向  期待：考上好大學</p>
+<p style="color:rgb(182, 148, 230);">我是一位射手座，生日在12月21日，來自名間國中。我的個性偏內向，喜歡沉浸在學習和創作的世界裡。在成長的旅程中，我不斷探索自己，從每一次的挑戰中汲取力量。校園生活對我而言充滿了成長的機會，也讓我學會了如何面對不同的困難和挑戰。我期待能夠順利考上理想的大學，繼續在未來的道路上不斷前行，實現我的夢想。
+</p>
+
+<header>
+  <h2>08 馬睿妤的小窩</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">AI生圖</a></li>
+      <li><a href="#">生活</a></li>
+      <li><a href="#">學校</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>AI生圖</h1>
     <img style="width:50%;"src="1.png">
-    <p>
-    <a href="test.html">南投高中</a>
-        <button onclick="alert('ok');">我是按鈕</button>
+    <p style="color:rgb(15, 180, 153);">這張照片中，一位穿著藍色運動服的女孩坐在球場上，微笑著比出耶的手勢，表情輕鬆愉快。背景是球場，顯示出陽光明媚的戶外環境。她的髮型簡單自然，整體給人一種青春活力的感覺。 </p>
+  </article>
+</section>
 
-        <p>睿妤是個專注且有理想的人，<span style="color:rgb(136, 114, 235);">對未來充滿期待。她是個內向的性格，</span>這使得她在日常生活中可能較少表露情感，但卻擁有深邃的思考和自我探索的能力</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.454884983383!2d120.67827887590052!3d23.908941182670322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693115b0afb3b1%3A0x12636c234990a8fb!2z5Y2X5oqV6auY5Lit6Zu75a2Q5ZWG5YuZ56eR!5e0!3m2!1szh-TW!2stw!4v1760948337615!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <iframe width="560"  height="315"  src="https://www.youtube.com/embed/TgSdZ8t2cU?si=YuNZ1EM-DhHbKgwo"  title="YouTube video player"  frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/ntsh2231175/"
-        width="340"
-        height="500"
-        style="border:none;overflow:hidden"
-        scrolling="no"
-        frameborder="0"
-        allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-</iframe>
-        
-
+<footer>
+  <p>版權所有.馬睿妤</p>
+</footer>
 
 </body>
 </html>
-<span style="color:rgb(73, 188, 223)">
+
